@@ -1,6 +1,7 @@
 import DOCS from './help.html'
 
-addEventListener("fetch"， (event) => {
+
+addEventListener("fetch", (event) => {
   event.passThroughOnException();
   event.respondWith(handleRequest(event.request));
 });
